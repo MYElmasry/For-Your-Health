@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For Your Health</title>
+    <meta
+      name="description"
+      content="our group name is genius kids and we are helping you in your health"
+    />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #ddd;
+        padding-right: 8px;
+      }
+      nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: black;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+      .container form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 8px;
+      }
+      .container form input {
+        width: 250px;
+      }
+      .container form button {
+        align-self: center;
+        width: 100px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <img src="../imgs/logo.png" alt="logo img" width="60px" />
+      <ul>
+        <li>
+          <a href="./addHospital.html" title="Add your hospital to our website"
+            >Add Hospital</a
+          >
+        </li>
+        <li>
+          <a href="./addPharmacy.html" title="Add your pharmacy to our website"
+            >Add Pharmacy</a
+          >
+        </li>
+        <li>
+          <a
+            href="./addAmbulance.html"
+            title="Add your ambulance to our website"
+            >Add Ambulance</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="container">
+      <img src="../imgs/hospital.jpg" alt="Hospital" width="300px" />
+      <form action="">
+        <label for="name">Hospital Name</label>
+        <input id="name" type="text" placeholder="Enter hospital name" />
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="Enter phone Number" />
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="Enter Location" />
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </body>
+</html>
